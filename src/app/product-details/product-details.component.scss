@@ -1,0 +1,38 @@
+.product-details {
+  div {
+    display: inline-block;
+  }
+  .detail-30 {
+    width: 26%;
+    margin: 1%;
+    padding: 1%;
+    border-right: 1px solid #ddd;
+  }
+  .detail-70 {
+    width: 65%;
+    margin: 1%;
+    padding: 1%;
+    position: absolute;
+  }
+  border: 1px solid #ddd;
+  box-shadow: 0px 3px 17px 1px #ddd;
+  margin: 3%;
+  border-radius: 5px;
+}
+
+.add-btn {
+  margin-left: 10px !important;
+}
+
+.product-img {
+  max-height: 300px;
+  min-height: 300px;
+  max-width: 180px;
+  min-width: 180px;
+}
+
+.price {
+    font-size: x-large;
+    font-weight: 500;
+    color: #444;
+}

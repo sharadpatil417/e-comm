@@ -1,0 +1,17 @@
+::ng-deep{
+    position: relative;
+}
+.login-card{
+    width: 28%;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    padding: 1%;
+    background-color: #efefef94;
+    opacity: 0.85;
+    .login-form{
+        .form-field{
+            width: 100%;
+        }
+    }
+}

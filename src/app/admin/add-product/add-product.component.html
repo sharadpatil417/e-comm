@@ -1,0 +1,68 @@
+<mat-card class="add-product-card">
+  <mat-card-header>
+    <mat-card-title>{{
+      productform.get("id")?.value === -1 ? "Add new product" : "Update product"
+    }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <br />
+    <form
+      class="product-form"
+      [formGroup]="productform"
+      (ngSubmit)="addProduct()"
+    >
+      <mat-form-field class="form-field">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          type="text"
+          required
+          formControlName="name"
+          placeholder="Product Name"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-field">
+        <mat-label>Price</mat-label>
+        <input
+          matInput
+          type="number"
+          required
+          formControlName="price"
+          placeholder="Product Price"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-field">
+        <mat-label>Description</mat-label>
+        <textarea
+          matInput
+          required
+          formControlName="description"
+          placeholder="Add desciption about the product..."
+        ></textarea>
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-field">
+        <mat-label>Image URL</mat-label>
+        <input
+          matInput
+          type="text"
+          required
+          formControlName="image_url"
+          placeholder="URL of the image"
+        />
+      </mat-form-field>
+      <br />
+      <button
+        mat-raised-button
+        color="primary"
+        mat-dialog-close
+        cdkFocusInitial
+        type="submit"
+      >
+        {{ productform.get("id")?.value === -1 ? "Save" : "Update" }}
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>

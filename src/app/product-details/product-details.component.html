@@ -1,0 +1,26 @@
+<div class="product-details">
+  <div class="detail-30">
+    <div style="text-align: center;width: 100%;">
+    <img
+      src="{{ product.image_url }}"
+      class="product-img"
+    />
+</div>
+    <br/>
+    <div style="text-align: center;width: 100%;">
+    <button mat-raised-button color="warn">BUY NOW</button>
+    <button mat-raised-button class="add-btn" color="primary">
+      ADD TO CART
+    </button>
+</div>
+  </div>
+  <div class="detail-70">
+    <h2>{{product.name}}</h2>
+
+    <p class="price">
+        &#8377; {{product.price}}
+      </p>
+
+      <p>{{product.description}}</p>
+  </div>
+</div>

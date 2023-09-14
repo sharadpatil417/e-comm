@@ -1,0 +1,31 @@
+<mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title>E-Comm</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="login-form" [formGroup]="form" (ngSubmit)="login()">
+      <mat-form-field class="form-field">
+        <mat-label>Username</mat-label>
+        <input
+          matInput
+          type="text"
+          required
+          formControlName="username"
+          placeholder="E-mail"
+        />
+      </mat-form-field>
+      <br />
+      <mat-form-field class="form-field">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          type="password"
+          required
+          formControlName="password"
+          placeholder="Your secret password"
+        />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
